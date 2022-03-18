@@ -77,7 +77,7 @@ void set_int(unsigned int value, bool zeros=false) {
   set_digit(1, (value/100)%10);
   set_digit(2, (value/10)%10);
   set_digit(3, value%10);
-  if (zero) {
+  if (zeros) {
     if (value < 1000) {
       set_custom(0, 0);
       if (value < 100) {
